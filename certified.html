@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Protofolio - Anfasa Candra Diputra</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/flexslider.css">
+	<link rel="stylesheet" href="fonts/icomoon/style.css">
+
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/star.sass">
+    
+    
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,700" rel="stylesheet">
+	<link href='https://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    
+
+
+</head>
+<style>
+.bottomtrans {
+   -webkit-mask-image: -webkit-gradient(linear, center top, center bottom, 
+   color-stop(0.80,  rgba(0,0,0,1)),
+   color-stop(1.00,  rgba(0,0,0,0)));
+}
+
+/* Style the Image Used to Trigger the Modal */
+img {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+img:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+#image-viewer {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+.modal-content { 
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+#image-viewer .close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+#image-viewer .close:hover,
+#image-viewer .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+</style>
+
+<body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
+
+ 
+
+    <nav class="navbar navbar-expand-lg site-navbar navbar-light bg-light" id="pb-navbar">
+        <a href="index.html"><span class="icon-arrow-left2"></span></a>
+        <div class="container">
+           
+    
+    
+            <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample09">
+                <ul class="navbar-nav">
+                   
+                  
+                      
+                    <li class="nav-item"><h2>My <strong>Project</strong></h2></li>
+                   
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+
+    <!-- section -->
+	<section class="site-section" id="section-project">
+        
+        <div class="container">
+            <div class="row">
+                <div class="section-heading text-center col-md-12">
+                    
+                </div>
+            </div>
+             <div class="filters">
+                
+            </div> 
+    
+            <script>
+                $(document).ready(function(){
+                    $('[data-toggle="popover"]').popover();   
+                });
+                </script>
+    
+            <div class="filters-content">
+                <div class="row grid">
+    
+    
+                    <div class="single-portfolio col-sm-4 all mockup">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active images">
+                              <img class="d-block w-100" data-toggle="modal" data-target="#exampleModalCenter1" style="width: 400px; height:220px;" src="images/DSS1.jpg" alt="First slide">
+                            </div>
+                          </div>
+                        <div class="p-inner">
+                            <div class="cat">Laravel</div>
+                        </div>                                         
+                    </div>
+
+                    <div class="single-portfolio col-sm-4 all mockup">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active images">
+                              <img class="d-block w-100" data-toggle="modal" data-target="#exampleModalCenter1" style="width: 400px; height:220px;" src="images/DSS2.jpg" alt="First slide">
+                            </div>
+                          </div>
+                        <div class="p-inner">
+                            <div class="cat">Laravel</div>
+                        </div>                                         
+                    </div>
+
+                   
+                        
+                        <div id="image-viewer">
+                          <span class="close mt-5">&times;</span>
+                          <img class="modal-content" id="full-image">
+                        </div>
+    
+                    
+    
+                    </div>
+                </div>
+            </div>
+        
+    </section>   
+	<!-- .section -->
+
+
+
+
+	
+
+
+	
+
+
+	 <footer class="site-footer">
+		<div class="container">
+		</div>
+	</footer> 
+
+
+ 
+    <script>
+        $(".images img").click(function(){
+      $("#full-image").attr("src", $(this).attr("src"));
+      $('#image-viewer').show();
+    });
+    
+    $("#image-viewer .close").click(function(){
+      $('#image-viewer').hide();
+    });
+    </script>
+
+	<script src="js/vendor/jquery.min.js"></script>
+	<script src="js/vendor/jquery-migrate-3.0.1.min.js"></script>
+	<script src="js/vendor/popper.min.js"></script>
+	<script src="js/vendor/bootstrap.min.js"></script>
+
+	<script src="js/vendor/jquery.easing.1.3.js"></script>
+
+	<script src="js/vendor/jquery.stellar.min.js"></script>
+	<script src="js/vendor/jquery.waypoints.min.js"></script>
+
+	<script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+	<script src="js/custom.js"></script>
+    
+
+	<!-- Google Map -->
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    	<script src="js/google-map.js"></script> -->
+
+
+    </body>
+    </html>
